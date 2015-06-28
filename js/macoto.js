@@ -1,8 +1,10 @@
 (function(window) {
   var meishi = document.querySelector('.meishi');
-  window.bc = meishi;
 
-  meishi.addEventListener('click', function(e){
+  function cardFlipHandler(){
     this.classList.toggle('show-back');
-  });
+  }
+
+  meishi.addEventListener('click', cardFlipHandler);
+  meishi.addEventListener('touchstart', cardFlipHandler);
 })(this);
