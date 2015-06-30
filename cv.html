@@ -3,64 +3,68 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Macoto - Damien McMahon - Frontend Developer</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <base href="/" />
     <link rel="stylesheet" href="styles/macoto.css">
   </head>
   <body>
+    <nav class="cv-navigator">
+      <div class="mobile-menu">
+        <span class="toggle"></span>
+      </div>
+      <a class="mobile-nav-link" href="/cv.html#header">Top</a>
+      <a class="mobile-nav-link" href="/cv.html#work">Work</a>
+      <a class="mobile-nav-link" href="/cv.html#education">Education</a>
+      <a class="mobile-nav-link" href="/cv.html#skills">Skills</a>
+      <a class="mobile-nav-link" href="/cv.html#interests">Interests</a>
+    </nav>
     <main class="cv-wrapper">
-      <section class="cv-header"><img src="/me.jpeg" alt="Picture of Damien McMahon">
+      <a name="header"></a>
+      <section class="cv-header"><img src="/imgs/me.jpeg" alt="Picture of Damien McMahon">
         <h1>Damien McMahon BSc.</h1>
-        <section class="cv-personal-info"><span class="email">damien.mcmahon@gmail.com</span></section>
         <section class="cv-statement">
-          <h2 class="section-title">About Me</h2>
-          <p>I’m a Frontend Developer with a passion for building delightful User Interfaces that are built mobile first, responsively and work anywhere a browser is installed.</p>
-          <p>I build components and from there Apps seem to grow. I’m happy working on backend things too, preferably in Javascript but have dabbled in Ruby and PHP.</p>
-          <p>I’ve been known to tinker with Apache, Nginx and have been spotted writing queries in MySQL, PostGres and Mongo.</p>
-          <p>The command line is a beautiful if esoteric place and it’s where I like to run my build tools, manage servers and install SSL certificates amongst other things.</p>
+          <p>I’m a Frontend Developer with a passion for building delightful User Interfaces that are built mobile first, responsive and work anywhere a browser is installed. I build components and from them compose Apps. I like to put the user first, thinking about making their experience better, even if it means more development work for myself.
+            <br /> I'm happy working on the backend too, having recently used Node/Express but I've also worked with Ruby/Rails and PHP. I'm happiest when I can use a keyboard shortcut and love the power of the command line for running build tools, pushing commits to Github, checking logs, configuring Nginx, installing SSL certificates or writing DB queries.
+            <br /> I always like to keep one eye on the future and I'm excited about Web Components, Service Workers and the Web being able to compete with Native experiences.</p>
         </section>
       </section>
       <section class="cv-work-history">
-        <h1>Jobs</h1>
+        <a name="work"></a>
+        <h1 class="section-title">Work History</h1>
         <article class="job">
           <header>
-            <h1>TAB Corp</h1>
-            <a href="http://tab.com.au">https://tab.com.au</a>
-            <h2>Senior UX Developer</h2>
-            <h3>Sydney, Australia</h3>
-            <h4>December 2014 - Present</h4>
+            <h1 class="job-company">TAB Corp</h1>
+            <h2 class="job-title">Senior UX Developer</h2>
+            <h3 class="job-location">Sydney, Australia</h3>
+            <h4 class="job-dates">Dec 2014 - Present</h4>
           </header>
           <section>
-            <p>I work as a UX Developer for TabCorp in Sydney and my role is to work across the UX and Development Teams.
-              As part of this role I spend time with the UX team helping to build hi-fidelity prototypes and offer coding assistance where needed.
-              I work with the Development team as a Frontend Developer assisting with styling and building of components, working to refine
-              them and apply feedback from the UX team. My role involves a even mix of Javascript and SASS.
-            </p>
+            <p>I work as a UX Developer for TabCorp in Sydney and my role is to work across the UX and Development Teams. As part of this role I spend time with the UX team helping to build high-fidelity prototypes and offer coding assistance where needed. I work with the Development team as a Frontend Developer assisting with styling and building of components, working to refine them and apply feedback from the UX team.</p>
           </section>
           <section class="skill-lists">
             <h2>Technically Speaking:</h2>
             <ul>
-              <li>Angular JS &amp; React in the frontend talking to a Node API</li>
-              <li>Building Angular &amp; React components</li>
-              <li>Responsive, HTML5 &amp; CSS3 frontend component creation</li>
-              <li>Continuous Integration and Deployment</li>
-              <li>Agile process for development with weekly sprints and demos</li>
+              <li>Angular JS &amp; React in the frontend talking to a Node API.</li>
+              <li>Building Angular &amp; React components.</li>
+              <li>Grunt underpinning the asset creation.</li>
+              <li>Github managed with Continuous Integration and Deployment via Travis.</li>
+              <li>Agile process for Development with fortnightly sprints and showcases.</li>
             </ul>
             <h2>Personally Speaking:</h2>
             <ul>
-              <li>Act as a link between Development and UX Design team to help build components</li>
-              <li>Assist Developers with weaker CSS skills</li>
+              <li>Work with Product Managers, Designers and Developers to create prototypes for user testing.</li>
+              <li>Mentor members of the team with weaker CSS skills.</li>
             </ul>
           </section>
         </article>
         <article class="job">
           <header>
-            <h1>Funding Circle</h1>
-            <a href="https://www.fundingcircle.com">https://www.fundingcircle.com</a>
-            <h2>Frontend Developer</h2>
-            <h3>London</h3>
-            <h4>December 2012 - December 2014</h4>
+            <h1 class="job-company">Funding Circle</h1>
+            <h2 class="job-title">Frontend Developer</h2>
+            <h3 class="job-location">London</h3>
+            <h4 class="job-dates">Dec 2012 - Dec 2014</h4>
           </header>
           <section>I was hired as the first Frontend developer at Funding Circle and have was tasked with building the
             frontend team along with breaking down a monolithic Rails/PHP hybrid app into smaller SOA apps.
@@ -85,10 +89,10 @@
         </article>
         <article class="job">
           <header>
-            <h1>Frogtrade</h1>
-            <h2>Frontend Developer</h2>
-            <h3>Halifax</h3>
-            <h4>June 2010 - November 2012</h4>
+            <h1 class="job-company">Frogtrade</h1>
+            <h2 class="job-title">Frontend Developer</h2>
+            <h3 class="job-location">Halifax</h3>
+            <h4 class="job-dates">Jun 2010 - Nov 2012</h4>
           </header>
           <section>As part of a team of Developers my role was to work on the frontend of Frog 3 the latest version
             of the PHP driven app used in Schools across the UK and Europe. This included a Javascript-heavy Calendar
@@ -112,10 +116,10 @@
         </article>
         <article class="job">
           <header>
-            <h1>Easy Affiliate</h1>
-            <h2>Frontend Developer</h2>
-            <h3>Huddersfield</h3>
-            <h4>August 2009 - June 2010</h4>
+            <h1 class="job-company">Easy Affiliate</h1>
+            <h2 class="job-title">Frontend Developer</h2>
+            <h3 class="job-location">Huddersfield</h3>
+            <h4 class="job-dates">Aug 2009 - Jun 2010</h4>
           </header>
           <section>I worked in this small affiliate marketing company to help maintain their existing referral platform that awarded points for users completing surveys and providing data. I helped to create a unified system that pulled various data sources together for reporting and helped to redesign ‘iGain’ they companies newer platform for advertising-driven rewards platform.</section>
           <section class="skill-lists">
@@ -129,10 +133,10 @@
         </article>
         <article class="job">
           <header>
-            <h1>Acorn Stairlifts </h1>
-            <h2>Developer</h2>
-            <h3>Steeton, Yorkshire</h3>
-            <h4>June 2008 - August 2009</h4>
+            <h1 class="job-company">Acorn Stairlifts </h1>
+            <h2 class="job-title">Developer</h2>
+            <h3 class="job-location">Steeton, Yorkshire</h3>
+            <h4 class="job-dates">Jun 2008 - Aug 2009</h4>
           </header>
           <section>My first development job, I worked across the web stack and discovered my preference for building the frontend. Here is where I first got the opportunity to use jQuery and increase my knowledge of JavaScript as well. I worked on reporting and tracking systems as well as several UIs and even a version of a site that was targeted at Blackberry Web Browsers.</section>
           <section class="skill-lists">
@@ -146,14 +150,11 @@
           </section>
         </article>
         <article class="job">
-          <aside>
-            <h1>Other Jobs of note:</h1>
-          </aside>
           <header>
-            <h1>Nova Corporation</h1>
-            <h2>English Language Instructor</h2>
-            <h3>Tokyo, Japan</h3>
-            <h4>September 2006 - September 2007</h4>
+            <h1 class="job-company">Nova Corp.</h1>
+            <h2 class="job-title">English Instructor</h2>
+            <h3 class="job-location">Tokyo, Japan</h3>
+            <h4 class="job-dates">Sep 2006 - Sep 2007</h4>
           </header>
           <section>I took a year out after University to live and work in Japan. Teaching English gave me an opportunity to see another part of the world, meet new and interesting people and push my capabilities in terms of helping people to understand another language. It’s a skill I’m proud to say I’ve been regularly commended on since.</section>
           <section class="skill-lists">
@@ -166,26 +167,31 @@
         </article>
       </section>
       <section class="education">
-        <h1>Education</h1>
-        <h2 class="section-title">My Educational background</h2>
+        <a name="education"></a>
+        <h1 class="section-title">Education</h1>
         <article class="qualification">
-          <h3 class="education-qualification">BSc Hons. Business Information Systems</h3><span class="education-grade">2:1</span><span class="education-institute">UWIC Business School, Cardiff</span>
+          <h2 class="education-qualification">BSc Hons. Business Information Systems</h2>
+          <h3 class="education-grade">2:1</h3>
+          <h4 class="education-institute"> - UWIC Business School, Cardiff</h4>
         </article>
         <article class="qualification">
-          <h3 class="education-qualification">A Levels in Computing, History, Sociology</h3><span class="education-grade">D, C, B</span><span class="education-institute">South Devon College, Torquay</span>
+          <h2 class="education-qualification">A Levels in Computing, History, Sociology</h2>
+          <h3 class="education-grade">D, C, B</h3>
+          <h4 class="education-institute"> - South Devon College, Torquay</h4>
         </article>
         <article class="qualification">
-          <h3 class="education-qualification">10 GCSE's including Maths, Science &amp; English</h3><span class="education-grade">7 B, 3 A</span><span class="education-institute">St Gregory's School, Bath</span>
+          <h2 class="education-qualification">10 GCSE's including Maths, Science &amp; English</h2>
+          <h3 class="education-grade">7 B, 3 A</h3>
+          <h4 class="education-institute"> - St Gregory's School, Bath</h4>
         </article>
       </section>
       <section class="tech-skills">
-        <h1>Skills</h1>
-        <h2 class="section-title">My Technical Skillset</h2>
-        <h1>Technology Bingo</h1>
-        <p>I’ve worked with these technologies, ordered by experience with most experienced going first.</p>
+        <a name="skills"></a>
+        <h1 class="section-title">Technical Skillset</h1>
         <p>HTML(5/XHTML), CSS(2 &amp; 3), Javascript, AngularJS, Jasmine, Ember, ReactJS, ES6, jQuery, CanJS, JavascriptMVC, Grunt, Gulp, ExpressJs, Node, Rails, Ruby, PHP, MySQL, PostgreSQL, Mongo, Apache, NginX</p>
       </section>
       <section class="Interests">
+        <a name="interests"></a>
         <h1 class="section-title">Interests</h1>
         <p>If I could know everything about everything then I would. Until I do, these things really fire my thoughts:</p>
         <ul>
@@ -194,6 +200,13 @@
           <li>Reading - My quest for knowledge is a long one, I like to read Murakami books and anything todo with improving the self and the mind.</li>
         </ul>
       </section>
+      <section class="cv-link">
+        <h1>Looking for a copy of my CV?</h1>
+        <a href="https://docs.google.com/document/d/1pVE3-bOdq4sR9fBng7YeMQdGdOcUoJHGTW-zgt1Wo0s/edit?usp=sharing" target="_blank">
+          Grab a DOC/DOCX/PDF Copy from Google Docs
+        </a>
+      </section>
     </main>
+    <script src="js/macoto.js"></script>
   </body>
 </html>
